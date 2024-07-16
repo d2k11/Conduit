@@ -103,7 +103,7 @@ namespace Conduit
                 ReadWhitelist();
                 string logPath = Environment.UserName != "root" ? "log.txt" : "/root/Conduit/log.txt";
                 if(!File.Exists(logPath)) File.Create(logPath).Close();
-                if (!ports.ContainsKey(ip) || !ports[ip].Contains(localPort.ToString()))
+                if ((!ports.ContainsKey(ip) || !ports[ip].Contains(localPort.ToString())) && !ports[ip].Contains("*"))
                 {
                     Console.WriteLine(" [DROPPED]");
                     File.WriteAllText(logPath, File.ReadAllText(logPath) +
@@ -173,6 +173,10 @@ namespace Conduit
                 string ip = parts[1];
                 if (!IsValidIPv4(ip))
                 {
+                    if (ip == "ALL")
+                    {
+                        ip = "*";
+                    }
                     if (aliases.ContainsValue(ip))
                     {
                         ip = aliases.Where(alias => alias.Value == ip).First().Key;
