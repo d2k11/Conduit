@@ -1,6 +1,76 @@
-bin/
-obj/
-/packages/
-riderModule.iml
-/_ReSharper.Caches/
+# Ignore Visual Studio temporary files, build results, and
+# Rider specific files
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Rider
 .idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider-specific project settings
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+.idea/.idea_modules.xml
+.idea/dataSources/
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+.idea/gradle.xml
+.idea/libraries
+.idea/misc.xml
+.idea/modules.xml
+.idea/encodings.xml
+.idea/androidStudioFirstRun.xml
+.idea/modules.xml
+.idea/codeStyleSettings.xml
+.idea/codeStyles
+.idea/copyright/
+.idea/assetWizard.xml
+
+# Rider caches
+.idea/modules.xml
+.idea/.idea_modules.xml
+.idea/compiler.xml
+.idea/jarRepositories.xml
+.idea/modules/
+.idea/codeStyleSettings.xml
+.idea/copyright/
+.idea/scopes/
+
+# OS-generated files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Icon must end with two \r
+Icon
+
+# The network browser stores temporary mounts here
+.VolumeIcon.icns
+.metadata_never_index
+.metadata_never_index_unless_rootfs
+
+# macOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
